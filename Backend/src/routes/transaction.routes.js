@@ -9,7 +9,7 @@ const transactionRoutes = Router();
  * @desc create a new transaction
  * @access Private (System user only)
  */
-transactionRoutes.post("/", authMiddleware.authSystemMiddleware, transactionController.createTransaction);
+transactionRoutes.post("/", authMiddleware.authMiddleware, transactionController.createTransaction);
 
 
 /**

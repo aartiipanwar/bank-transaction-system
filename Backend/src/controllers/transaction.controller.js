@@ -196,7 +196,7 @@ async function createInitialFundsTransaction(req, res){
     await session.commitTransaction()
     session.endSession()
 
-    return res.status(201).josn({
+    return res.status(201).json({
         message: "Initial funds transaction completed successfully",
         transaction: transaction
     })
